@@ -3,9 +3,11 @@ import datetime
 
 
 def info():
-    id = int(input('Введите id пользователя на gitlab.com: '))  # ID Пользователя на gitlab.com
-    gitlabUrl = 'https://gitlab.com/api/v4/users/{0}/events'.format(id)  # URL на события
-    r = requests.get(gitlabUrl).json()
+    nick = str(input('Введите nick пользователя на gitlab.com: '))
+    user_link = 'https://gitlab.com/api/v4/users?username={0}'.format(nick)
+    id = requests.get(user_link).json()[0]['id']
+    gitlab_url = 'https://gitlab.com/api/v4/users/{0}/events'.format(id)
+    r = requests.get(gitlab_url).json()
 
     date_list = []
     for current_date in r:
