@@ -47,8 +47,8 @@ def send(info):
     url = ("https://api.trello.com/1/cards/{0}/actions/comments").format(idCard)  # URL на добавления комментария в карточку
 
     text = info
-    key = '93f7cc27bf5ab965fc4eea3abe8f2912'  # Наш ключ в trello.com
-    token = 'b6800f56453309ac1ddd91dafe05fc3c8a69192d0fae45fb57342ae782d53aa0'  # Наш токен в trello.com
+    key = '2'  # Наш ключ в trello.com
+    token = ''  # Наш токен в trello.com
 
     querystring = {'text': text,
                    'key': key,
