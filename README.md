@@ -2,7 +2,7 @@
 
 gitlab-to-trello - count the ammount of commits on gitlab pew week and send info of workdays which you have no commits and days off commits
 
-# RUN
+## RUN
 
 you have no need to install program
 
@@ -12,7 +12,7 @@ you can run it with  cosole command
 
 gitlab-to-trello [OPTIONS]
 
-OPTIONS
+## OPTIONS
 
 -u	                         Your gitlab username
 -t                        	 Trello card id
