@@ -1,11 +1,13 @@
+# gitlab-to-trello
 
 gitlab-to-trello - count the ammount of commits on gitlab pew week and send info of workdays which you have no commits and days off commits
 
-    RUN
+# RUN
 
 you have no need to install program
 
-you can run it with  cosole "python gitlab-to-trello.py" command
+you can run it with  cosole command
+```python gitlab-to-trello.py```
 
 
 gitlab-to-trello [OPTIONS]
